@@ -1,0 +1,170 @@
+@media (min-width: 360px) and (max-width: 480px){
+    #header{
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+
+    #main .informacoes{
+        padding: 0 10px;
+    }
+
+    .main .informacoes img{
+        max-width: 100px;
+    }
+
+    .imagem-fundo{
+        height: calc(100vh - 80px);
+        width: 100%;
+    }
+
+    .main .informacoes .titulo{
+        font-size: 35px;
+    }
+
+    .main .informacoes .texto{
+        font-family: "Chalet";
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .btn-comprar{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #section{
+        padding: 10px;
+    }
+
+    .section .cartao{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .plataformas{
+        flex-direction: column;
+    }
+
+    .btn-plataformas{
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .header{
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .imagem-fundo{
+        height: calc(100vh - 80px);
+        width: 100%;
+    }
+
+    #main .informacoes img{
+        max-width: 120px;
+    }
+
+    #main .informacoes .titulo{
+        font-size: 45px;
+    }
+
+    #main .informacoes{
+        padding: 0 20px;
+    }
+    
+    .btn-comprar{
+        width: 70%;
+    }
+
+    #section{
+        padding: 10px;
+    }
+
+    .section .cartao{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .plataformas{
+        flex-direction: column;
+    }
+
+    .btn-plataformas{
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .header{
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .imagem-fundo{
+        height: calc(100vh - 80px);
+    }
+
+    #main .informacoes{
+        padding: 10px 10px 10px 20px;
+    }
+
+    #main .informacoes .titulo{
+        font-size: 50px;
+    }
+
+    #main .informacoes .texto{
+        max-width: 70%;
+    }
+
+    .btn-comprar{
+        width: 70%;
+    }
+
+    #section{
+        padding: 10px;
+    }
+
+    .section .cartao{
+        width: 80%;
+        padding: 20px;
+    }
+
+    .plataformas{
+        flex-direction: column;
+    }
+
+    .btn-plataformas{
+        width: 90%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
+    #main .informacoes{
+        padding-left: 80px;
+    }
+
+    .imagem-fundo{
+        height: calc(100vh - 80px);
+    }
+
+    #section{
+        padding: 10px;
+    }
+
+    .section .cartao{
+        width: 70%;
+        padding: 20px;
+    }
+
+    .plataformas{
+        flex-direction: column;
+    }
+
+    .btn-plataformas{
+        width: 90%;
+    }
+}

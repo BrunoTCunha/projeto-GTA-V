@@ -1,0 +1,223 @@
+@import url('https://fonts.cdnfonts.com/css/chalet');
+
+body{
+    background-color: #282828;
+    color: #fff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b0b0b;
+    height: 80px;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
+}
+
+header .imagens{
+    display: flex;
+    gap: 15px;
+}
+
+header .menu{
+    display: flex;
+}
+
+header .menu a{
+    padding: 30px;
+    font-family: 'Chalet', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+header .menu a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+#main{
+    display: flex;
+    position: relative;
+    max-height: calc(100vh - 80px);
+}
+
+#main::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+#main .imagem-fundo{
+    width: 100%;    
+    object-fit: cover;
+}
+
+#main .informacoes{
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+}
+
+.main .informacoes img{
+    max-width: 150px;
+}
+
+.imagem-dupla{
+    display: flex;
+    gap: 2rem;
+}
+
+.main .informacoes .titulo{
+    font-family: "ChaletComprime";
+    font-size: 55px;
+}
+
+.main .informacoes .texto{
+    font-family: "Chalet";
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn-comprar, .btn-plataformas{
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: "ChaletComprime";
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .3s ease-in;
+}
+
+.btn-comprar:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+#section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.titulo-sec{
+    text-align: center;
+    font-family: "ChaletComprime";
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.capa{
+    width: 300px;
+}
+
+.section .cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+
+}
+
+.section .infos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.section .infos h3{
+    font-family: "ChaletComprime";
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.section .infos p{
+    font-family: "Chalet";
+    color: #e8e8e8;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.plataformas{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-plataformas{
+    color: white;
+    cursor: pointer;
+}
+
+.plataformas2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 1s ease-in;
+    display: none;
+    opacity: 0;
+}
+
+.plataformas2.ativo{
+    display: flex;
+    opacity: 1;
+    transition: all 1s ease-in;
+}
+
+.plataformas2 li{
+    padding: 20px;
+}
+
+.plataformas2 li:nth-child(1){
+    border: 1px solid #00439c
+}
+.plataformas2 li:nth-child(1):hover{
+    background-color: #00439c
+}
+
+.plataformas2 li:nth-child(2){
+    border: 1px solid #387a26
+}
+.plataformas2 li:nth-child(2):hover{
+    background-color: #387a26
+}
+
+.plataformas2 li:nth-child(3){
+    border: 1px solid #00439c
+}
+.plataformas2 li:nth-child(3):hover{
+    background-color: #00439c
+}
+
+.plataformas2 li:nth-child(4){
+    border: 1px solid #387a26
+}
+.plataformas2 li:nth-child(4):hover{
+    background-color: #387a26
+}
+
+.plataformas2 li:nth-child(5){
+    border: 1px solid #fcaf17
+}
+.plataformas2 li:nth-child(5):hover{
+    background-color: #fcaf17
+}
